@@ -82,9 +82,11 @@
 	status = "okay";
 };
 
+/*
 &tve0 {
 	status = "okay";
 };
+*/
 
 &tcon0 {
 	pinctrl-names = "default";
