@@ -1,0 +1,13 @@
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0001-Add-USB-Support.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0002-Fix-CCU-definition.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0003-Add-DMA-Controller.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0004-Add-Audio-Codec.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0005-Add-sun4i-csi-packed-format.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0006-Add-rfkill-gpio-DT-support.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0007-Fix-spi-nand-BBM-size.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0008-Add-CedarX-Driver.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0009-Fix-ancient-GDF5-A-series-NAND.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0010-Add-AW9523B-GPIO-Expender.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0011-Allow-phy-sun4i-usb-use-nested-irq.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0012-Add-AXP199-Support.patch
+/workspace/buildroot-tiny200/board/allwinner/suniv-f1c100s/patch/linux/0013-Add-XT25F128-SPI-NOR.patch

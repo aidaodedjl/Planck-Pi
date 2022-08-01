@@ -1,0 +1,16 @@
+linux,./lib/modules/5.4.77/modules.order
+linux,./lib/modules/5.4.77/modules.builtin
+linux,./lib/modules/5.4.77/modules.builtin.modinfo
+linux,./lib/modules/5.4.77/kernel/drivers/input/touchscreen/goodix.ko
+linux,./lib/modules/5.4.77/kernel/drivers/input/touchscreen/tsc2007.ko
+linux,./lib/modules/5.4.77/kernel/drivers/media/i2c/ov2640.ko
+linux,./lib/modules/5.4.77/kernel/drivers/media/i2c/ov5640.ko
+linux,./lib/modules/5.4.77/modules.dep
+linux,./lib/modules/5.4.77/modules.dep.bin
+linux,./lib/modules/5.4.77/modules.alias
+linux,./lib/modules/5.4.77/modules.alias.bin
+linux,./lib/modules/5.4.77/modules.softdep
+linux,./lib/modules/5.4.77/modules.symbols
+linux,./lib/modules/5.4.77/modules.symbols.bin
+linux,./lib/modules/5.4.77/modules.builtin.bin
+linux,./lib/modules/5.4.77/modules.devname
