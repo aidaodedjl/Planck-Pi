@@ -354,13 +354,18 @@
 			};
 
 			i2c0_pd_pins: i2c0-pd-pins {
-				pins = "PD0", "PD12";
+				pins = "PD12", "PD0";
 				function = "i2c0";
 			};
 
 			i2c1_pd_pins: i2c1-pd-pins {
 				pins = "PD5", "PD6";
 				function = "i2c1";
+			};
+
+			i2c2_pd_pins: i2c2-pd-pins {
+				pins = "PD15", "PD16";
+				function = "i2c2";
 			};
 
 			uart1_pa_pins: uart1-pins {
@@ -517,7 +522,7 @@
 			clocks = <&ccu CLK_BUS_I2C0>;
 			resets = <&ccu RST_BUS_I2C0>;
 			pinctrl-names = "default";
-			pinctrl-0 = <&i2c0_pd_pins>;
+			pinctrl-0 = <&i2c0_pe_pins>;
 			status = "disabled";
 			#address-cells = <1>;
 			#size-cells = <0>;
@@ -529,6 +534,8 @@
 			interrupts = <8>;
 			clocks = <&ccu CLK_BUS_I2C1>;
 			resets = <&ccu RST_BUS_I2C1>;
+			pinctrl-names = "default";
+			pinctrl-0 = <&i2c1_pd_pins>;
 			status = "disabled";
 			#address-cells = <1>;
 			#size-cells = <0>;
@@ -540,6 +547,8 @@
 			interrupts = <9>;
 			clocks = <&ccu CLK_BUS_I2C2>;
 			resets = <&ccu RST_BUS_I2C2>;
+			pinctrl-names = "default";
+			pinctrl-0 = <&i2c2_pd_pins>;
 			status = "disabled";
 			#address-cells = <1>;
 			#size-cells = <0>;
