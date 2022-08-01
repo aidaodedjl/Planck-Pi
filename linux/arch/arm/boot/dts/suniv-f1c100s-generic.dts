@@ -82,15 +82,19 @@
 	status = "okay";
 };
 
+/*
 &tve0 {
 	status = "okay";
 };
+*/
 
+/*
 &tcon0 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&lcd_rgb565_pins>;
 	status = "okay";
 };
+*/
 
 &codec {
 	allwinner,audio-routing =
@@ -104,9 +108,18 @@
 };
 
 &i2c0 {
-	pinctrl-names = "default";
-	pinctrl-0 = <&i2c0_pd_pins>;
-	// status = "okay";
+	status = "okay";
+	
+	ssd1306fb: ssd1306fb@3c {
+		compatible = "solomon,ssd1306fb-i2c";
+		reg = <0x3c>;
+		solomon,width = <128>;
+		solomon,height = <64>;
+		reset-gpios = <&pio 3 7 GPIO_ACTIVE_HIGH>; //PD7
+		solomon,page-offset = <0>;
+		solomon,com-invdir;
+		debug = <0>;
+	};
 
 	/*
 	ov2640: camera@30 {

@@ -3379,6 +3379,7 @@
 0x00000000	__sk_mem_raise_allocated	vmlinux	EXPORT_SYMBOL	
 0x00000000	vb2_buffer_done	vmlinux	EXPORT_SYMBOL_GPL	
 0x00000000	usb_unlink_anchored_urbs	vmlinux	EXPORT_SYMBOL_GPL	
+0x00000000	fb_bl_default_curve	vmlinux	EXPORT_SYMBOL_GPL	
 0x00000000	zlib_inflateEnd	vmlinux	EXPORT_SYMBOL	
 0x00000000	__blkdev_issue_discard	vmlinux	EXPORT_SYMBOL	
 0x00000000	skcipher_walk_aead	vmlinux	EXPORT_SYMBOL_GPL	
