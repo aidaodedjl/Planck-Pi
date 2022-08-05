@@ -19,6 +19,34 @@
 
 		stdout-path = "serial0:115200n8";
 	};
+
+	leds {
+		compatible = "gpio-leds";
+
+		sys_led {
+			label = "led:sys";
+			gpios = <&pio 4 3 GPIO_ACTIVE_LOW>; /* PE3 */
+			default-state = "on";
+		};
+
+		user_led {
+			label = "led:user";
+			gpios = <&pio 4 4 GPIO_ACTIVE_LOW>; /* PE4 */
+		};
+
+		/*
+		 *	点亮LED
+		 *	echo 1 > /sys/class/leds/led\:user/brightness
+		 *	熄灭LED
+		 *	echo 0 > /sys/class/leds/led\:user/brightness
+		 *	控制LED闪烁
+		 *	# ls /sys/class/leds/led:user
+		 *	brightness      max_brightness  subsystem       uevent
+		 *	device          power           trigger
+		 *	echo heartbeat > /sys/class/leds/led:user/trigger
+		 */
+
+	};
 };
 
 &spi0 {
@@ -55,7 +83,7 @@
 
 &usbphy {
 	status = "okay";
-	usb0_id_det-gpios = <&pio 0 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; /* PA1 */
+	usb0_id_det-gpios = <&pio 4 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>; /* PE2 */
 };
 
 /*
@@ -110,16 +138,19 @@
 &i2c0 {
 	status = "okay";
 	
+	/*
 	ssd1306fb: ssd1306fb@3c {
 		compatible = "solomon,ssd1306fb-i2c";
 		reg = <0x3c>;
 		solomon,width = <128>;
-		solomon,height = <64>;
+		solomon,height = <80>;
 		reset-gpios = <&pio 3 7 GPIO_ACTIVE_HIGH>; //PD7
 		solomon,page-offset = <0>;
 		solomon,com-invdir;
+		solomon,dclk-frq = <5>;
 		debug = <0>;
 	};
+	*/
 
 	/*
 	ov2640: camera@30 {
