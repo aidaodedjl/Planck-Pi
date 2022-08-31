@@ -264,7 +264,7 @@ CROSS_COMPILE ?=
 endif
 
 ARCH = arm
-CROSS_COMPILE = ../toolchain/bin/arm-linux-
+CROSS_COMPILE = ../toolchain/gcc-linaro-7.5.0/bin/arm-linux-gnueabi-
 
 KCONFIG_CONFIG	?= .config
 export KCONFIG_CONFIG
