@@ -359,7 +359,7 @@ include scripts/subarch.include
 # Note: Some architectures assign CROSS_COMPILE in their arch/*/Makefile
 
 ARCH = arm
-CROSS_COMPILE = ../toolchain/bin/arm-linux-
+CROSS_COMPILE = ../toolchain/gcc-linaro-7.5.0/bin/arm-linux-gnueabi-
 
 # Architecture as present in compile.h
 UTS_MACHINE 	:= $(ARCH)
